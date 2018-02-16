@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "HTML5 Geolocation",
+  "version": "1.0.0",
+  "icons": {
+    "128": "icon_128.png"
+  },
+  "permissions": [ "notifications","geolocation","storage","<all_urls>", "*://*/*"],
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "minimum_chrome_version": "28",
+  "sandbox": { "pages": [ "index.html" ] }
+}
